@@ -1,5 +1,6 @@
 var express = require("express"),
-    url = require("url"),
+    pluralize = require("pluralize"),
+    dumps = require("./js/dumps.js")
     app = express(),
     indexOptions = {
         "root": __dirname + "/static/",
@@ -13,7 +14,16 @@ var express = require("express"),
 app.set("port", (process.env.PORT || 5000));
 app.use(express.static(__dirname + "/public"));
 
-// Redirect everything to the /static/ dir (because of indexOptions)
+app.get("/api/*", function (request, response) {
+    var name = request.url.slice(request.url.lastIndexOf("/") + 1),
+        dump = dumps.getDump(name);
+
+    console.log("Doing", dump);
+
+    response.end(JSON.stringify(dump));
+});
+
+// Redirect everything else to the /static/ dir (because of indexOptions)
 app.get("*", function (request, response) {
     response.sendFile(request.url, indexOptions, function () {
         response.end();
