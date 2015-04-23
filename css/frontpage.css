@@ -1,0 +1,55 @@
+/* General elements
+*/
+
+body {
+    color: white;
+}
+
+select {
+    font-size: 1em;
+}
+
+/* Sections
+*/
+
+section {
+    background: black;
+}
+
+/* Section 1 (main)
+*/
+
+h1 {
+    text-shadow: 0 0 7px rgba(210,210,255,.77);
+}
+
+#sec_main {
+    padding: 14px;
+    font-size: 2.1em;
+}
+
+#pluralizer {
+    margin: 0 3px 0 -7px;
+    font-size: 70%;
+}
+
+#are {
+    display: inline-block;
+    padding: 0 0 .21em 0;
+    border: solid white;
+    border-width: 1px 0;
+    font-size: .77em;
+    font-style: italic;
+    line-height: .84em;
+}
+
+#main_blurb {
+    margin: 1.4em auto .35em auto;
+    width: 77%;
+    min-width: 490px;
+}
+
+#sec_main hr {
+    margin-top: .63em;
+    width: 49px;
+}

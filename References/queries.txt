@@ -1,0 +1,7 @@
+Helpful Queries
+
+List all DBpedia Ontology Types:
+
+	select ?type {
+	   ?type a owl:Class .
+	}
