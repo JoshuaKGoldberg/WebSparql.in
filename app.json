@@ -1,0 +1,6 @@
+{
+    "name": "WebSparql.in",
+    "description": "A nifty tool to see relationships in DBpedia information.",
+    "repository": "https://github.com/JoshuaKGoldberg/WebSparql.in",
+    "keywords": [ "node", "javascript", "dbpedia", "big data" ]
+}

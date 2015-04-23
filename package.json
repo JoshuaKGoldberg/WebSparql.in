@@ -1,0 +1,21 @@
+{
+    "name": "WebSparql.in",
+    "version": "0.1.0",
+    "description": "A nifty tool to see relationships in DBpedia information.",
+    "main": "main.js",
+    "scripts": {
+        "start": "node main.js"
+    },
+    "dependencies": {
+        "express": "~4.9.x"
+    },
+    "engines": {
+        "node": "0.12.X"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JoshuaKGoldberg/WebSparql.in"
+    },
+    "keywords": [ "node", "javascript", "dbpedia", "big data" ],
+    "license": "MIT"
+}
