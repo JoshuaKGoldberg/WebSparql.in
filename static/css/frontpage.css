@@ -10,10 +10,6 @@ body {
     color: white;
 }
 
-select {
-    font-size: 1em;
-}
-
 #background {
     position: fixed;
     z-index: -1;
@@ -36,6 +32,19 @@ select {
 
 h1 {
     text-shadow: 0 0 7px rgba(210,210,255,.77);
+}
+
+select {
+    font-size: 1em;
+    display: none;
+}
+
+select.visible {
+    display: inline;
+}
+
+select.hidden + span {
+    display: none !important;
 }
 
 #sec_main {

@@ -18,8 +18,6 @@ app.get("/api/*", function (request, response) {
     var name = request.url.slice(request.url.lastIndexOf("/") + 1),
         dump = dumps.getDump(name);
 
-    console.log("Doing", dump);
-
     response.end(JSON.stringify(dump));
 });
 

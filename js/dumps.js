@@ -4,7 +4,6 @@ var fs = require("fs"),
 module.exports = {
     "results": {},
     "getDump": function (name) {
-        console.log("Getting", name);
         if (!this.results.hasOwnProperty(name)) {
             console.log("a");
             this.results[name] = this.obtainDumpData(name);
