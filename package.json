@@ -7,8 +7,7 @@
         "start": "node main.js"
     },
     "dependencies": {
-        "express": "~4.9.X",
-        "fs": "~0.1.X"
+        "express": "~4.9.X"
     },
     "engines": {
         "node": "0.12.X"
